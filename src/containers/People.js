@@ -24,7 +24,6 @@ const People = () => {
 
     const personDeletedHandler = (personId) => {
         setPeople( ( prevState ) => {
-            // return { people: prevState.people.filter(person => person.id !== personId)}
             return prevState.filter(person => person.id !== personId)
         } );
     }
