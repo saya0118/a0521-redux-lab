@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Persons from './containers/Persons';
+import People from './containers/People';
 
 class App extends Component {
   render() {
@@ -9,7 +9,7 @@ class App extends Component {
         <ol>
           <li>Turn this app into one which does NOT use local state (in components) but instead uses Redux</li>
         </ol>
-        <Persons />
+        <People />
       </div>
     );
   }
