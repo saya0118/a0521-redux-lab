@@ -3,4 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+
+import personReducer from './redux/person.reducer';
+
+const store = createStore(personReducer)
+
+ReactDOM.render(
+<Provider store={store}>
+    <App />
+</Provider>,
+ document.getElementById('root'));
